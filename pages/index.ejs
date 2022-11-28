@@ -32,7 +32,7 @@
       <ul class="list-group">
         <% for (let i = 0; i < notes.length; i++) { %>
           <li class="list-group-item d-flex mb-3 align-items-center">
-            <div class="me-auto p-2"><%= notes[i].title %></div>
+            <span class="me-auto p-2"><%= notes[i].title %></span>
 
             <button class="btn btn-primary p-2" data-type="edit" data-id="<%= notes[i].id %>">Rename</button>
             <button class="btn btn-danger p-2" data-type="remove" data-id="<%= notes[i].id %>">&times;</button>
